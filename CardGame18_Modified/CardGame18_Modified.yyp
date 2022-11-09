@@ -26,6 +26,7 @@
     {"id":{"name":"spr_card_rocks","path":"sprites/spr_card_rocks/spr_card_rocks.yy",},"order":0,},
     {"id":{"name":"spr_card_lizard","path":"sprites/spr_card_lizard/spr_card_lizard.yy",},"order":4,},
     {"id":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},"order":1,},
+    {"id":{"name":"snd_button","path":"sounds/snd_button/snd_button.yy",},"order":9,},
     {"id":{"name":"obj_rm_rules","path":"objects/obj_rm_rules/obj_rm_rules.yy",},"order":5,},
     {"id":{"name":"fnt_score","path":"fonts/fnt_score/fnt_score.yy",},"order":0,},
     {"id":{"name":"spr_card_spock","path":"sprites/spr_card_spock/spr_card_spock.yy",},"order":5,},
