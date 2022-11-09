@@ -211,7 +211,7 @@ if (game_state = STATE_CARD_COMP) {
 		if (AI_card_selected == 2) {
 			//player +score
 			global.player_score = global.player_score + 1;
-			audio_play_sound(snd_win,1,false);
+			audio_play_sound(snd_rock,1,false);
 			effect_create_below(ef_ellipse,400, 530, 1, c_white);
 			show_debug_message("scissor");
 		}
@@ -219,7 +219,7 @@ if (game_state = STATE_CARD_COMP) {
 		else if (AI_card_selected == 4) {
 			//ai +score
 			global.player_score = global.player_score + 1;
-			audio_play_sound(snd_win,1,false);
+			audio_play_sound(snd_rock,1,false);
 			effect_create_below(ef_ellipse,400, 530, 1, c_white);
 			show_debug_message("lizard");
 		}
@@ -252,14 +252,14 @@ if (game_state = STATE_CARD_COMP) {
 		if (AI_card_selected == 0) {
 			//player +score
 			global.player_score = global.player_score + 1;
-			audio_play_sound(snd_win,1,false);
+			audio_play_sound(snd_paper,1,false);
 			effect_create_below(ef_ellipse,400, 530, 1, c_white);
 			show_debug_message("rock");
 		}
 		
 		if (AI_card_selected == 3) {
 			//player +score
-			audio_play_sound(snd_spock,1,false);
+			audio_play_sound(snd_paper,1,false);
 			effect_create_below(ef_ellipse,400, 530, 1, c_white);
 			global.player_score = global.player_score + 1;
 
@@ -292,7 +292,7 @@ if (game_state = STATE_CARD_COMP) {
 		if (AI_card_selected == 1) {
 			//player +score
 			global.player_score = global.player_score + 1;
-			audio_play_sound(snd_win,1,false);
+			audio_play_sound(snd_sccisor,1,false);
 			effect_create_below(ef_ellipse,400, 530, 1, c_white);
 			show_debug_message("paper");
 		}
@@ -300,7 +300,7 @@ if (game_state = STATE_CARD_COMP) {
 		if (AI_card_selected == 4) {
 			//player +score
 			global.player_score = global.player_score + 1;
-			audio_play_sound(snd_win,1,false);
+			audio_play_sound(snd_sccisor,1,false);
 			effect_create_below(ef_ellipse,400, 530, 1, c_white);
 			show_debug_message("lizard");
 		}
@@ -330,7 +330,7 @@ if (game_state = STATE_CARD_COMP) {
 		
 		if (AI_card_selected == 3) {
 			//player +score
-			audio_play_sound(snd_spock,1,false);
+			audio_play_sound(snd_lizard,1,false);
 			effect_create_below(ef_ellipse,400, 530, 1, c_white);
 			global.player_score = global.player_score + 1;
 			show_debug_message("spock");
@@ -339,7 +339,7 @@ if (game_state = STATE_CARD_COMP) {
 		if (AI_card_selected == 1) {
 			//player +score
 			global.player_score = global.player_score + 1;
-			audio_play_sound(snd_win,1,false);
+			audio_play_sound(snd_lizard,1,false);
 			effect_create_below(ef_ellipse,400, 530, 1, c_white);
 			show_debug_message("paper");
 		}
@@ -370,7 +370,7 @@ if (game_state = STATE_CARD_COMP) {
 		if (AI_card_selected == 2) {
 			//player +score
 			global.player_score = global.player_score + 1;
-			audio_play_sound(snd_win,1,false);
+			audio_play_sound(snd_spock,1,false);
 			effect_create_below(ef_ellipse,400, 530, 1, c_white);
 			show_debug_message("scissor");
 		}
@@ -378,7 +378,7 @@ if (game_state = STATE_CARD_COMP) {
 		if (AI_card_selected == 0) {
 			//player +score
 			global.player_score = global.player_score + 1;
-			audio_play_sound(snd_win,1,false);
+			audio_play_sound(snd_spock,1,false);
 			effect_create_below(ef_ellipse,400, 530, 1, c_white);
 			show_debug_message("rock");
 		}
@@ -450,6 +450,7 @@ else if(game_state == STATE_DISCARD){
 			discard_list[|l].facedown = false;
 			discard_list[|l].card_holder = ch_ai;
 			discard_list[|l].depth = m;
+			audio_play_sound(snd_deal_cards,1,false);
 			timer = 0;
 			l++;
 		}
