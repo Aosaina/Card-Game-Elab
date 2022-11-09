@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_lose",
+  "name": "snd_bgm",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.54,
+  "volume": 0.05,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_lose.mp3",
-  "duration": 1.992,
+  "soundFile": "snd_bgm.mp3",
+  "duration": 60.081635,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

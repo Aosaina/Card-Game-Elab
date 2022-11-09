@@ -4,6 +4,7 @@
   "name": "CardGame18_Modified",
   "resources": [
     {"id":{"name":"snd_sccisor","path":"sounds/snd_sccisor/snd_sccisor.yy",},"order":6,},
+    {"id":{"name":"snd_bgm","path":"sounds/snd_bgm/snd_bgm.yy",},"order":8,},
     {"id":{"name":"snd_deal_cards","path":"sounds/snd_deal_cards/snd_deal_cards.yy",},"order":0,},
     {"id":{"name":"snd_win","path":"sounds/snd_win/snd_win.yy",},"order":1,},
     {"id":{"name":"fnt_title","path":"fonts/fnt_title/fnt_title.yy",},"order":1,},
@@ -11,6 +12,7 @@
     {"id":{"name":"obj_player_score","path":"objects/obj_player_score/obj_player_score.yy",},"order":2,},
     {"id":{"name":"fnt_rules","path":"fonts/fnt_rules/fnt_rules.yy",},"order":2,},
     {"id":{"name":"obj_card","path":"objects/obj_card/obj_card.yy",},"order":0,},
+    {"id":{"name":"obj_bgm","path":"objects/obj_bgm/obj_bgm.yy",},"order":7,},
     {"id":{"name":"snd_paper","path":"sounds/snd_paper/snd_paper.yy",},"order":7,},
     {"id":{"name":"rm_rules","path":"rooms/rm_rules/rm_rules.yy",},"order":2,},
     {"id":{"name":"obj_card_manager","path":"objects/obj_card_manager/obj_card_manager.yy",},"order":1,},
