@@ -259,9 +259,10 @@ if (game_state = STATE_CARD_COMP) {
 		
 		if (AI_card_selected == 3) {
 			//player +score
-			global.player_score = global.player_score + 1;
-			audio_play_sound(snd_win,1,false);
+			audio_play_sound(snd_spock,1,false);
 			effect_create_below(ef_ellipse,400, 530, 1, c_white);
+			global.player_score = global.player_score + 1;
+
 			show_debug_message("spock");
 		}
 		
@@ -329,9 +330,9 @@ if (game_state = STATE_CARD_COMP) {
 		
 		if (AI_card_selected == 3) {
 			//player +score
-			global.player_score = global.player_score + 1;
-			audio_play_sound(snd_win,1,false);
+			audio_play_sound(snd_spock,1,false);
 			effect_create_below(ef_ellipse,400, 530, 1, c_white);
+			global.player_score = global.player_score + 1;
 			show_debug_message("spock");
 		}
 		
@@ -433,24 +434,6 @@ else if(game_state == STATE_DISCARD){
 		k++;
 	}
 	
-	//for(i = 0;i < num_player_card;i++) {
-	//	ds_list_add(discard_list,player_cards[|i]);
-	//	show_debug_message("player: " + string(ds_list_size(discard_list)));
-	//}
-	
-	
-	
-	
-	//for (j = 0; j < num_ai_card; j++) {	
-	//	ds_list_add(discard_list,ai_cards[|j]);	
-	//	show_debug_message("ai: " + string(ds_list_size(discard_list)));
-	//}
-	
-	
-	
-		
-	//go over discard list with for loop
-	
 	
 	if (k == 6) {
 		ds_list_clear(player_cards);
@@ -474,14 +457,7 @@ else if(game_state == STATE_DISCARD){
 		show_debug_message("m: " + string(m));
 		show_debug_message("l: " + string(l));
 		show_debug_message("discard pile: " + string(ds_list_size(discard_pile)));
-			//for (i = 0; i < ds_list_size(discard_list); i++) {
 		
-			//	discard_list[|i].target_x = 650
-			//	discard_list[|i].target_y = card_y - i*2;
-			//	discard_list[|i].facedown = false;
-			//	discard_list[|i].depth = -i;
-			
-			//}
 		if (l == 6) {
 			if (num_cards > 0) {
 				show_debug_message("next round")
@@ -496,9 +472,7 @@ else if(game_state == STATE_DISCARD){
 					discard_pile[|o].facedown = true;
 					discard_pile[|o].depth = -o;
 					audio_play_sound(snd_deal_cards,1,false);
-						//if(discard_pile[|i].target_x == card_x){
-						//instance_destroy(discard_pile[|i]);
-						//}
+						
 					ds_list_add(cards,discard_pile[|o]);
 					show_debug_message("card pile: " + string(cards));
 					show_debug_message(string(ds_list_size(cards)));
